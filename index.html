@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <h3 class="logo">USER <span>INFO</span></h3>
+        <div class="list">
+          <button class="see-info-btn active-link btn">See Info</button>
+          <button class="add-info-btn btn">Add Info</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="see-info">
+      <div class="see-info_content">
+        <h4>Our user's data.</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+          impedit vero. Incidunt eos dolorum, qui placeat totam necessitatibus
+          illum dignissimos quae distinctio a! Voluptate consequuntur repellat,
+          est doloribus enim veniam?
+        </p>
+        <div class="see-info_content_data-card-wrapper">
+          <div class="see-info_content_data-card-wrapper_data-card">
+            <p class="data-name"><b>NAME: </b>Abrar Hussen Zahed</p>
+            <p class="data-email"><b>EMAIL: </b>abrarzahed6986@gmail.com</p>
+            <p class="data-phone"><b>PHONE: </b>+8800112233</p>
+          </div>
+          <div class="see-info_content_data-card-wrapper_data-card">
+            <p><b>NAME: </b>Abrar Hussen Zahed</p>
+            <p><b>EMAIL: </b>abrarzahed6986@gmail.com</p>
+            <p><b>PHONE: </b>+8800112233</p>
+            <!-- <i class="fas fa-trash"></i> -->
+          </div>
+          <div class="see-info_content_data-card-wrapper_data-card">
+            <p><b>NAME: </b>Abrar Hussen Zahed</p>
+            <p><b>EMAIL: </b>abrarzahed6986@gmail.com</p>
+            <p><b>PHONE: </b>+8800112233</p>
+          </div>
+          <div class="see-info_content_data-card-wrapper_data-card">
+            <p><b>NAME: </b>Abrar Hussen Zahed</p>
+            <p><b>EMAIL: </b>abrarzahed6986@gmail.com</p>
+            <p><b>PHONE: </b>+8800112233</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="add-info display-none">
+      <div class="modal-button">
+        <div class="modal-button_content">
+          <h4>Send your data.</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non itaque
+            nemo consequuntur recusandae quisquam quas atque quod corporis cum,
+            expedita perferendis asperiores voluptatibus incidunt doloremque
+            odit ut quasi exercitationem rerum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+            facere illum nobis, exercitationem ratione corrupti consectetur
+            deleniti quia fuga totam!
+          </p>
+          <button class="modal-button__btn btn">Open Modal</button>
+        </div>
+      </div>
+      <!-- modal wrapper -->
+      <div class="modal-wrapper display-none">
+        <div class="modal-wrapper_modal">
+          <div class="modal-wrapper_modal_content">
+            <div class="modal-wrapper_modal_content_icon">
+              <i class="fas fa-user-alt"></i>
+            </div>
+            <h2>Add your information</h2>
+            <p>Make it easier for your friends to get in touch with you.</p>
+            <input type="text" placeholder="Enter your Name" class="name" />
+            <input type="text" placeholder="Enter your Email" class="email" />
+            <span class="error error-email display-none"
+              >Email is required</span
+            >
+            <input
+              type="text"
+              placeholder="Enter your Phone number"
+              class="phone-number"
+            />
+            <span class="error error-phone display-none"
+              >Phone number is required</span
+            >
+            <div class="modal-wrapper_modal_content_actions">
+              <button class="btn cancel">Not Now</button>
+              <button class="btn accept">Add Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="firebase.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
